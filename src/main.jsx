@@ -15,8 +15,14 @@ import { MemoHook } from "./07.-UseMemo/MemoHook";
 import { CallbackHook } from "./08.-UseCallback/CallbackHook";
 import { Padre } from "./09-tarea-memo/Padre";
 
+import "./10.-UseReducer/introreducer";
+import { TodoApp } from "./10.-UseReducer/TodoApp";
+import { MainApp } from "./11.-useContext/mainApp";
+
+import { BrowserRouter } from "react-router-dom";
+
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <div>
+  <BrowserRouter>
     {/* <HooksApp /> */}
     {/* <CounterApp /> */}
     {/* <CounterwithCustomHook /> */}
@@ -28,6 +34,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     {/* <Memorize /> */}
     {/* <MemoHook /> */}
     {/* <CallbackHook /> */}
-    <Padre />
-  </div>
+    {/* <Padre /> */}
+    {/* <TodoApp /> */}
+    <MainApp />
+  </BrowserRouter>
 );
